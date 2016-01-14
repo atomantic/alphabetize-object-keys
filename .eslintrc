@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+  },
+  "globals": {
+  },
+  "rules": {
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "quotes": [2, "single"],
+    "semi": [2, "always"],
+    "strict": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "alphabetize-object-keys",
+  "version": "0.0.1",
+  "description": "deeply alphabetize object keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomantic/alphabetize-object-keys.git"
+  },
+  "keywords": [
+    "object",
+    "keys",
+    "alphabetize",
+    "alphabetical",
+    "sort",
+    "recursive",
+    "deep"
+  ],
+  "author": "Adam Eivy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atomantic/alphabetize-object-keys/issues"
+  },
+  "homepage": "https://github.com/atomantic/alphabetize-object-keys#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "lodash": "^4.0.0"
+  }
+}
