@@ -1,10 +1,10 @@
 {
   "name": "alphabetize-object-keys",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "deeply alphabetize object keys",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,6 @@
   "homepage": "https://github.com/atomantic/alphabetize-object-keys#readme",
   "devDependencies": {
     "chai": "^3.4.1",
-    "gulp": "^3.9.0",
-    "gulp-mocha": "^2.2.0",
-    "gulp-util": "^3.0.7",
     "mocha": "^2.3.4"
   },
   "dependencies": {

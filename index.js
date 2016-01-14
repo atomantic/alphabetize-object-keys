@@ -15,7 +15,7 @@
    *  };
    *  JSON.stringify(_.alphabetize(obj)) === '{"a":2,"b":1,"c":{"a":2,"b":1}}'
    */
-var _ = require('_');
+var _ = require('lodash');
 var alphabetize = function(object) {
    var sortedObj = {},
        keys = _.keys(object);
