@@ -1,3 +1,4 @@
+[![Beerpay](https://beerpay.io/atomantic/alphabetize-object-keys/badge.svg?style=flat-square)](https://beerpay.io/atomantic/alphabetize-object-keys)
 # Alphabetize Object Keys
 
 Deeply sort an object keys alphabetically. This will also iterate over array values to find deep objects and sort those without altering the value array indexes.
