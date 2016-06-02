@@ -20,6 +20,9 @@
     "deep"
   ],
   "author": "Adam Eivy",
+  "engines": {
+    "node" : ">=0.10.45"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/atomantic/alphabetize-object-keys/issues"
