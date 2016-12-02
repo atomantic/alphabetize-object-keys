@@ -1,6 +1,6 @@
 {
   "name": "alphabetize-object-keys",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "deeply alphabetize object keys",
   "main": "index.js",
   "scripts": {
@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/atomantic/alphabetize-object-keys#readme",
   "devDependencies": {
-    "chai": "3.4.1",
-    "mocha": "3.0.1"
+    "chai": "3.5.0",
+    "mocha": "3.2.0"
   },
   "dependencies": {
-    "lodash": "4.14.1"
+    "lodash": "4.17.2"
   }
 }
