@@ -1,6 +1,8 @@
 [![](https://travis-ci.org/atomantic/alphabetize-object-keys.svg?branch=master)](https://travis-ci.org/atomantic/alphabetize-object-keys)
 [![](https://img.shields.io/npm/dm/alphabetize-object-keys.svg?style=flat)](https://www.npmjs.org/package/alphabetize-object-keys)
 [![](https://img.shields.io/npm/v/alphabetize-object-keys.svg?style=flat)](https://www.npmjs.org/package/alphabetize-object-keys)
+[![](https://img.shields.io/twitter/follow/antic.svg?label=Follow&style=social)](https://twitter.com/antic)
+
 
 # Alphabetize Object Keys
 
