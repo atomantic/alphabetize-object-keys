@@ -1,4 +1,3 @@
-[![Beerpay](https://beerpay.io/atomantic/alphabetize-object-keys/badge.svg?style=flat-square)](https://beerpay.io/atomantic/alphabetize-object-keys)
 [![](https://travis-ci.org/atomantic/alphabetize-object-keys.svg?branch=master)](https://travis-ci.org/atomantic/alphabetize-object-keys)
 [![](https://img.shields.io/npm/dm/alphabetize-object-keys.svg?style=flat)](https://www.npmjs.org/package/alphabetize-object-keys)
 [![](https://img.shields.io/npm/v/alphabetize-object-keys.svg?style=flat)](https://www.npmjs.org/package/alphabetize-object-keys)
@@ -58,3 +57,6 @@ sorted is now:
   }
 }
 ```
+
+# Why sort object keys?
+Even though objects are dynamically arranged in memory and accessible by key, when you JSON.stringify an object, you may want the output to be alphabetically organized. In my case, I built this library to validate automated gamut tests against an API where I bombarded an API with fuzzy variations from a JSON data file. My tests were then able to determine that the right output was achieved by generating the expected response and comparing the the stringified output of the API vs the spec. Additionally, the output of these tests get committed to the repo in an output folder full of JSON files. This library eliminated ugly commits where nothing changed but the ordering of the object keys, while we maintained visibility into changes to spec adherance. 
