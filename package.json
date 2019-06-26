@@ -30,7 +30,7 @@
   "homepage": "https://github.com/atomantic/alphabetize-object-keys#readme",
   "devDependencies": {
     "chai": "4.2.0",
-    "mocha": "5.2.0"
+    "mocha": "6.1.4"
   },
   "dependencies": {
     "lodash": "4.17.11"
