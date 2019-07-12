@@ -1,7 +1,6 @@
 var chai = require('chai')
 var expect = chai.expect
 var alphabetize = require('../index.js')
-var _ = require('lodash')
 describe('Alphabetize Object Keys', function() {
   it('should alphabetize simple object', function() {
     var obj = {b:1,a:2,d:3,c:4}
@@ -29,9 +28,9 @@ describe('Data Validation', function(){
     NaN: NaN,
     function: function(){}
   }
-  _.forEach(unchanged, function(val, key){
+  Object.keys(unchanged).forEach(function(key){
     it('should not alter '+key+' parameters', function() {
-      expect(alphabetize(val)).to.deep.equal(val)
+      expect(alphabetize(unchanged[key])).to.deep.equal(unchanged[key])
     })
   })
 })

@@ -1,45 +1,46 @@
-  /**
-   * sort the keys in an object alphabetically, recursively
-   *
-   * @function module:undermore.alphabetize
-   * @param {object} obj The object to traverse
-   * @return {mixed} the object with alphabetized keys
-   * @example
-   *  _.mixin({
-   *    alphabetize: require('alphabetize-object-keys')
-   *  })
-   *  var obj = {
-   *     c: {b:1,a:2},
-   *     b: 1,
-   *     a: 2
-   *  }
-   *  JSON.stringify(_.alphabetize(obj)) === '{"a":2,"b":1,"c":{"a":2,"b":1}}'
-   */
-var _ = require('lodash')
+/**
+ * sort the keys in an object alphabetically, recursively
+ *
+ * @function module:undermore.alphabetize
+ * @param {object} obj The object to traverse
+ * @return {mixed} the object with alphabetized keys
+ * @example
+ *  _.mixin({
+ *    alphabetize: require('alphabetize-object-keys')
+ *  })
+ *  var obj = {
+ *     c: {b:1,a:2},
+ *     b: 1,
+ *     a: 2
+ *  }
+ *  JSON.stringify(_.alphabetize(obj)) === '{"a":2,"b":1,"c":{"a":2,"b":1}}'
+ */
+
 var alphabetize = function(object) {
-    // only act on objects! string, number, array return unchanged
-   if(_.isArray(object) || _.isFunction(object) || !_.isObject(object)){
-       return object
-   }
-   var sortedObj = {},
-       keys = _.keys(object)
+  // only act on objects! string, number, array return unchanged
+  if (!object || Array.isArray(object) || typeof object === 'function' || typeof object !== 'object') {
+    return object
+  }
+  var sortedObj = {},
+    keys = Object.keys(object)
 
-   keys = _.sortBy(keys, function(key){
-       return key
-   })
+  keys.sort(function(a, b) {
+    return a < b ? -1 : 1
+  })
 
-   _.each(keys, function(key) {
-       if(_.isArray(object[key])) {
-           sortedObj[key] = object[key].map(function(val) {
-               return _.isObject(val) ? alphabetize(val) : val
-           })
-       } else if(_.isObject(object[key])){
-           sortedObj[key] = alphabetize(object[key])
-       } else {
-           sortedObj[key] = object[key]
-       }
-   })
+  keys.forEach(function(key) {
+    var val = object[key]
+    if (Array.isArray(val)) {
+      sortedObj[key] = object[key].map(function(v) {
+        return typeof v === 'object' ? alphabetize(v) : v
+      })
+    } else if (typeof val === 'object') {
+      sortedObj[key] = alphabetize(val)
+    } else {
+      sortedObj[key] = val
+    }
+  })
 
-   return sortedObj
+  return sortedObj
 }
 module.exports = alphabetize

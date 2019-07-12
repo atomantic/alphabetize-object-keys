@@ -1,6 +1,6 @@
 {
   "name": "alphabetize-object-keys",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "deeply alphabetize object keys",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   ],
   "author": "Adam Eivy",
   "engines": {
-    "node": ">=0.10.45"
+    "node": ">=8.0.0"
   },
   "license": "ISC",
   "bugs": {
@@ -30,9 +30,7 @@
   "homepage": "https://github.com/atomantic/alphabetize-object-keys#readme",
   "devDependencies": {
     "chai": "4.2.0",
-    "mocha": "5.2.0"
+    "mocha": "6.1.4"
   },
-  "dependencies": {
-    "lodash": "4.17.11"
-  }
+  "dependencies": {}
 }
