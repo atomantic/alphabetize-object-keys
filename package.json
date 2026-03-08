@@ -29,8 +29,12 @@
   },
   "homepage": "https://github.com/atomantic/alphabetize-object-keys#readme",
   "devDependencies": {
-    "chai": "4.2.0",
-    "mocha": "6.1.4"
+    "chai": "^4.5.0",
+    "mocha": "^11.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "overrides": {
+    "diff": "^8.0.3",
+    "serialize-javascript": "^7.0.4"
+  }
 }
